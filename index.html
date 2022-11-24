@@ -1,26 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="icon" type="logo/icon" href="favicon.ico">
-	<title>Home</title>
-
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale= 1.0">
+	<link rel="icon" type="logo/icon" href="favicon.ico">
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	<title>Home</title>
 
 
 	<style>
 		body {margin: 0; padding: 0; box-sizing: border-box; background-color: #F5E5C1; background-image: url(https://img.freepik.com/free-vector/luxury-gold-marble-background-design_1195-1680.jpg?size=626&ext=jpg); background-repeat: flex; background-size: 100%;}
-
-
-		#navbar_main {padding: 9px; color: #F5E5C1; background-color: #3E3E3E; overflow: auto;}
-
-		#navbar_main div {padding: 10px; font-size: 15px; float: right;}
-
-			#navbar_main a:link {color: unset;}
-
-			#navbar_main a:visited {color: unset;}
-
-			#navbar_main a:hover div {background-color: #575452;}
 
 
 		table {border-collapse: collapse; width: 100%;}
@@ -44,13 +34,21 @@
 	</style>
 </head>
 <body>
-	<nav id="navbar_main">
-		<a href="#Address"><div>Address</div></a>
-		<a href="About.html"><div>About</div></a>
-		<a href="SHS.html"><div>Senior High School</div></a>
-		<a href="JHS.html"><div>Junior High School</div></a>
-		<a href="Elem.html"><div>Elementary</div></a>
-		<a href="index.html"><div>Home</div></a>
+	<nav class="navbar navbar-expand-lg bg-light">
+		<div class="container-fluid">
+		<a class="navbar-brand" href="#">Navbar</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		<div class="navbar-nav">
+			<a class="nav-link active" aria-current="page" href="#">Home</a>
+			<a class="nav-link" href="#">Features</a>
+			<a class="nav-link" href="#">Pricing</a>
+			<a class="nav-link" href="#">Pricing</a>
+      		</div>
+   		</div>
+  		</div>
 	</nav>
 
 		<div id="margin-top">
@@ -110,5 +108,9 @@
 			</address>
 		</div>
 		</div>
+
+
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
